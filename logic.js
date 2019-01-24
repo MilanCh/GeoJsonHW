@@ -89,7 +89,7 @@ var satellite = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
     
 
 var borderLink = "boundaries.json";
-//var fault_Line    
+ 
  
 d3.json(borderLink,function(data) {
     
@@ -100,9 +100,8 @@ d3.json(borderLink,function(data) {
 };
 
     
-    fault_Line=L.geoJson(data,{style: myStyle});
-                                
-                                  // Create overlay object to hold our overlay layer
+ 
+                            
   var overlayMaps = {
     "Earthquakes": earthquakes
   };
